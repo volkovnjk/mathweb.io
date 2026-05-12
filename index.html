@@ -28,7 +28,7 @@
 <section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 grid lg:grid-cols-2 gap-12 items-center">
   <div>
     <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-medium mb-6">
-      Программа старшей школы РФ
+      Интерактивное обучение
     </div>
 
     <h2 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">
@@ -78,166 +78,6 @@
   </div>
 </section>
 
-<section id="modules" class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-  <h2 class="text-3xl font-bold mb-8">Учебные модули</h2>
-
-  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-    <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
-      <h3 class="text-xl font-bold mb-4">Алгебра</h3>
-      <ul class="space-y-3 text-slate-600">
-        <li>• Квадратные уравнения</li>
-        <li>• Логарифмы</li>
-        <li>• Производные</li>
-        <li>• Функции</li>
-      </ul>
-    </div>
-
-    <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
-      <h3 class="text-xl font-bold mb-4">Геометрия</h3>
-      <ul class="space-y-3 text-slate-600">
-        <li>• Планиметрия</li>
-        <li>• Стереометрия</li>
-        <li>• Векторы</li>
-        <li>• Объёмы фигур</li>
-      </ul>
-    </div>
-
-    <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
-      <h3 class="text-xl font-bold mb-4">Тригонометрия</h3>
-      <ul class="space-y-3 text-slate-600">
-        <li>• Синус и косинус</li>
-        <li>• Формулы приведения</li>
-        <li>• Тождества</li>
-        <li>• Тригонометрические уравнения</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<section id="theory" class="bg-white border-y border-slate-200 py-16 mt-12">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6">
-    <h2 class="text-3xl font-bold mb-8">Теория</h2>
-
-    <div class="space-y-6">
-
-      <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
-        <h3 class="text-2xl font-bold mb-4">Квадратные уравнения</h3>
-
-        <p class="mb-4 text-slate-600">
-          Квадратное уравнение имеет вид:
-        </p>
-
-        <div class="bg-white rounded-2xl p-5 text-center text-2xl font-bold border border-slate-200 mb-4">
-          ax² + bx + c = 0
-        </div>
-
-        <p class="mb-4 text-slate-600">
-          Для решения используется дискриминант.
-        </p>
-
-        <div class="bg-white rounded-2xl p-5 text-center text-2xl font-bold border border-slate-200">
-          D = b² - 4ac
-        </div>
-      </div>
-
-      <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
-        <h3 class="text-2xl font-bold mb-4">Тригонометрия</h3>
-
-        <p class="text-slate-600 mb-4">
-          Основное тригонометрическое тождество:
-        </p>
-
-        <div class="bg-white rounded-2xl p-5 text-center text-2xl font-bold border border-slate-200">
-          sin²x + cos²x = 1
-        </div>
-      </div>
-
-      <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
-        <h3 class="text-2xl font-bold mb-4">Производная</h3>
-
-        <p class="text-slate-600 mb-4">
-          Производная показывает скорость изменения функции.
-        </p>
-
-        <div class="bg-white rounded-2xl p-5 text-center text-2xl font-bold border border-slate-200">
-          (xⁿ)' = n·xⁿ⁻¹
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="practice" class="max-w-5xl mx-auto px-4 sm:px-6 py-16">
-  <h2 class="text-3xl font-bold mb-8">Практика</h2>
-
-  <div class="space-y-6">
-
-    <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8">
-      <h3 class="text-lg sm:text-xl font-semibold mb-6">
-        1. Решите уравнение: x² - 5x + 6 = 0
-      </h3>
-
-      <div class="space-y-3">
-        <button onclick="checkAnswer(this, true)" class="answer-btn w-full text-left px-5 py-4 rounded-2xl border border-slate-200 hover:border-blue-300 transition">
-          x = 2 и x = 3
-        </button>
-
-        <button onclick="checkAnswer(this, false)" class="answer-btn w-full text-left px-5 py-4 rounded-2xl border border-slate-200 hover:border-blue-300 transition">
-          x = 1 и x = 6
-        </button>
-
-        <button onclick="checkAnswer(this, false)" class="answer-btn w-full text-left px-5 py-4 rounded-2xl border border-slate-200 hover:border-blue-300 transition">
-          x = -2 и x = -3
-        </button>
-      </div>
-    </div>
-
-    <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8">
-      <h3 class="text-lg sm:text-xl font-semibold mb-6">
-        2. Чему равен sin(90°)?
-      </h3>
-
-      <div class="space-y-3">
-        <button onclick="checkAnswer(this, false)" class="answer-btn w-full text-left px-5 py-4 rounded-2xl border border-slate-200 hover:border-blue-300 transition">
-          0
-        </button>
-
-        <button onclick="checkAnswer(this, true)" class="answer-btn w-full text-left px-5 py-4 rounded-2xl border border-slate-200 hover:border-blue-300 transition">
-          1
-        </button>
-
-        <button onclick="checkAnswer(this, false)" class="answer-btn w-full text-left px-5 py-4 rounded-2xl border border-slate-200 hover:border-blue-300 transition">
-          -1
-        </button>
-      </div>
-    </div>
-
-    <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8">
-      <h3 class="text-lg sm:text-xl font-semibold mb-6">
-        3. Чему равна производная x³?
-      </h3>
-
-      <div class="space-y-3">
-        <button onclick="checkAnswer(this, false)" class="answer-btn w-full text-left px-5 py-4 rounded-2xl border border-slate-200 hover:border-blue-300 transition">
-          x²
-        </button>
-
-        <button onclick="checkAnswer(this, true)" class="answer-btn w-full text-left px-5 py-4 rounded-2xl border border-slate-200 hover:border-blue-300 transition">
-          3x²
-        </button>
-
-        <button onclick="checkAnswer(this, false)" class="answer-btn w-full text-left px-5 py-4 rounded-2xl border border-slate-200 hover:border-blue-300 transition">
-          9x
-        </button>
-      </div>
-    </div>
-
-  </div>
-</section>
-
 </main>
 
 <footer class="border-t border-slate-200 bg-white mt-10">
@@ -245,23 +85,6 @@
     © 2026 MathStep
   </div>
 </footer>
-
-<script>
-function checkAnswer(button, isCorrect) {
-  const parent = button.parentElement;
-  const buttons = parent.querySelectorAll('.answer-btn');
-
-  buttons.forEach(btn => {
-    btn.disabled = true;
-  });
-
-  if (isCorrect) {
-    button.classList.add('bg-green-100', 'border-green-500');
-  } else {
-    button.classList.add('bg-red-100', 'border-red-500');
-  }
-}
-</script>
 
 </body>
 </html>
