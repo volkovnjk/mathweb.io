@@ -17,8 +17,8 @@
 
     <nav class="flex flex-wrap gap-4 text-sm font-medium">
       <a href="#modules" class="hover:text-blue-600 transition">Модули</a>
-      <a href="#theory" class="hover:text-blue-600 transition">Теория</a>
-      <a href="#practice" class="hover:text-blue-600 transition">Практика</a>
+      <a href="#geometry" class="hover:text-blue-600 transition">Геометрия</a>
+      <a href="#probability" class="hover:text-blue-600 transition">Вероятность</a>
     </nav>
   </div>
 </header>
@@ -37,7 +37,7 @@
     </h2>
 
     <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8">
-      Теория, примеры, тесты и автоматическая проверка ответов.
+      Теория, практика, тесты и автоматическая проверка ответов.
     </p>
   </div>
 
@@ -58,23 +58,121 @@
       <div>
         <div class="flex justify-between text-sm mb-1">
           <span>Геометрия</span>
-          <span>9 тем</span>
+          <span>12 тем</span>
         </div>
         <div class="h-3 rounded-full bg-slate-100 overflow-hidden">
-          <div class="h-full bg-blue-500 rounded-full" style="width:75%"></div>
+          <div class="h-full bg-blue-500 rounded-full" style="width:80%"></div>
         </div>
       </div>
 
       <div>
         <div class="flex justify-between text-sm mb-1">
-          <span>Тригонометрия</span>
-          <span>7 тем</span>
+          <span>Теория вероятности</span>
+          <span>6 тем</span>
         </div>
         <div class="h-3 rounded-full bg-slate-100 overflow-hidden">
-          <div class="h-full bg-blue-500 rounded-full" style="width:90%"></div>
+          <div class="h-full bg-blue-500 rounded-full" style="width:70%"></div>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="modules" class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+  <h2 class="text-3xl font-bold mb-8">Учебные модули</h2>
+
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <div id="geometry" class="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
+      <h3 class="text-2xl font-bold mb-4">Геометрия</h3>
+
+      <ul class="space-y-3 text-slate-600 mb-6">
+        <li>• Планиметрия</li>
+        <li>• Стереометрия</li>
+        <li>• Векторы</li>
+        <li>• Площади фигур</li>
+        <li>• Объёмы тел</li>
+      </ul>
+
+      <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 mb-4">
+        <h4 class="font-semibold mb-3">Теория</h4>
+        <p class="text-slate-600 mb-3">
+          Площадь круга вычисляется по формуле:
+        </p>
+        <div class="bg-white rounded-xl p-4 text-center text-2xl font-bold border border-slate-200">
+          S = πr²
+        </div>
+      </div>
+
+      <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+        <h4 class="font-semibold mb-4">Практика</h4>
+
+        <p class="mb-4 text-slate-600">
+          Чему равна площадь круга радиуса 3?
+        </p>
+
+        <div class="space-y-3">
+          <button onclick="checkAnswer(this,false)" class="answer-btn w-full text-left px-4 py-3 rounded-xl border border-slate-200 hover:border-blue-300 transition">
+            6π
+          </button>
+
+          <button onclick="checkAnswer(this,true)" class="answer-btn w-full text-left px-4 py-3 rounded-xl border border-slate-200 hover:border-blue-300 transition">
+            9π
+          </button>
+
+          <button onclick="checkAnswer(this,false)" class="answer-btn w-full text-left px-4 py-3 rounded-xl border border-slate-200 hover:border-blue-300 transition">
+            3π
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="probability" class="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
+      <h3 class="text-2xl font-bold mb-4">Теория вероятности</h3>
+
+      <ul class="space-y-3 text-slate-600 mb-6">
+        <li>• Случайные события</li>
+        <li>• Вероятность события</li>
+        <li>• Комбинаторика</li>
+        <li>• Перестановки</li>
+        <li>• Сочетания</li>
+      </ul>
+
+      <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 mb-4">
+        <h4 class="font-semibold mb-3">Теория</h4>
+
+        <p class="text-slate-600 mb-3">
+          Вероятность события вычисляется по формуле:
+        </p>
+
+        <div class="bg-white rounded-xl p-4 text-center text-2xl font-bold border border-slate-200">
+          P(A) = m / n
+        </div>
+      </div>
+
+      <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+        <h4 class="font-semibold mb-4">Практика</h4>
+
+        <p class="mb-4 text-slate-600">
+          Какова вероятность выпадения 6 на игральном кубике?
+        </p>
+
+        <div class="space-y-3">
+          <button onclick="checkAnswer(this,true)" class="answer-btn w-full text-left px-4 py-3 rounded-xl border border-slate-200 hover:border-blue-300 transition">
+            1/6
+          </button>
+
+          <button onclick="checkAnswer(this,false)" class="answer-btn w-full text-left px-4 py-3 rounded-xl border border-slate-200 hover:border-blue-300 transition">
+            1/3
+          </button>
+
+          <button onclick="checkAnswer(this,false)" class="answer-btn w-full text-left px-4 py-3 rounded-xl border border-slate-200 hover:border-blue-300 transition">
+            1/2
+          </button>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -85,6 +183,23 @@
     © 2026 MathStep
   </div>
 </footer>
+
+<script>
+function checkAnswer(button, isCorrect) {
+  const parent = button.parentElement;
+  const buttons = parent.querySelectorAll('.answer-btn');
+
+  buttons.forEach(btn => {
+    btn.disabled = true;
+  });
+
+  if (isCorrect) {
+    button.classList.add('bg-green-100', 'border-green-500');
+  } else {
+    button.classList.add('bg-red-100', 'border-red-500');
+  }
+}
+</script>
 
 </body>
 </html>
